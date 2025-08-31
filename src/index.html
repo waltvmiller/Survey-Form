@@ -1,0 +1,214 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Highland Hospital Survey Form</h1>
+    <p id="description" class="description text-center">
+      Congratulations COVID-19 survivor!
+      Please help us improve our service
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your full name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>Reason of your visit?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select from the options below</option>
+        <option value="student">Emergency</option>
+        <option value="job">Hospitalization</option>
+        <option value="learner">Labor</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Would you recommend Highland Hospital to a friend?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What is your favorite doctor of Highland Hospital?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="challenges">Dr. Smith</option>
+        <option value="projects">Dr. Palotto</option>
+        <option value="community">Dr. Oddone</option>
+        <option value="openSource">Dr. Gonzales</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What would you like to see improved?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="customer-service"
+          type="checkbox"
+          class="input-checkbox"
+        />Customer Service</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="hospitality"
+          type="checkbox"
+          class="input-checkbox"
+        />Hospitality</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="quality-of-service"
+          type="checkbox"
+          class="input-checkbox"
+        />Quality Of Service</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="check-in-speed"
+          type="checkbox"
+          class="input-checkbox"
+        />Check In Speed</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="meal-service"
+          type="checkbox"
+          class="input-checkbox"
+        />Meal Service</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="beds"
+          type="checkbox"
+          class="input-checkbox"
+        />Beds</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="rooms"
+          type="checkbox"
+          class="input-checkbox"
+        />Rooms</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="staff"
+          type="checkbox"
+          class="input-checkbox"
+        />Staff</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="ventilators"
+          type="checkbox"
+          class="input-checkbox"
+        />Ventilators</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="fitness-center"
+          type="checkbox"
+          class="input-checkbox"
+        />Fitness Center</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="extra-procedures"
+          type="checkbox"
+          class="input-checkbox"
+        />Extra Procedures</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
